@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: radial-gradient(#8338e3, #e0a9bb);
+    display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+body h1{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    color: #880085;
+    margin-bottom: 30px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+  font-optical-sizing: auto;
+}
+.container{
+background-color: snow;
+width: 700px;
+border: none;
+border-radius: 10px;
+padding: 20px;
+}
+.main-section{
+    border: 1px solid rgb(166, 163, 163);
+    border-radius: 5px;
+}
+.main-section .Translate-area{
+display: flex;
+border-bottom: 1px solid rgb(166, 163, 163) ;
+}
+.Translate-area textarea{
+    min-width: 20rem;
+    min-height: 20rem;
+    outline: none;
+    text-align: center;
+    background: none ;
+    font-size: 20px;
+    padding: 10px 13px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+
+}
+.Translate-area .toText{
+    border-left: 1px solid rgb(166, 163, 163) ;
+    font-family: "Poppins", sans-serif;
+}
+.elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    height: 80px;
+    padding: 12px 15px;
+}
+.elements, li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elements .icons i {
+    width: 60px;
+    color:rgb(105, 105, 105) ;
+    cursor: pointer;
+}
+.languages{
+    border: none;
+    outline: none;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+.languages:hover {
+    background-color: #f0f0f0;
+}
+
+.Translate{
+    padding-bottom: 30px;
+}
+.Translate button{
+    border: none;
+    background-color:#62359d;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    color: snow;
+}
+.Translate button:hover{
+color: snow;
+background-color: #8238e3db;
+}
+@media (max-width:768px){
+  .container{
+    width: 90%;
+    padding: 15px;
+  }
+  .Translate-area textarea{
+    font-size: 16px;
+    min-width: 15rem;
+    min-height: 15rem;
+  }
+  .elements .icons i{
+    width: 50px;
+    padding: 5px;
+}
+    .Translate button{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; 
+    }
+
+    .Translate-area {
+        flex-direction: column; 
+        }
+
+    .Translate-area textarea {
+        min-width: 100%; 
+        min-height: 12rem;
+    }
+
+    .elements {
+        flex-direction: column; 
+        align-items: center;
+        gap: 10px;
+    }
+    .elements .icons i {
+        width: 40px;
+    }
+ .Translate{
+    padding: 20px;
+    margin-top: 30px;
+ }
+    .Translate button {
+        width: 100%; 
+        font-size: 16px;
+        height: 45px;
+
+     }
+}
