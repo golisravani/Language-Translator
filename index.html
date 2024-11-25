@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Leckerli+One&family=Lobster&family=Meow+Script&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Language Translator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Language Translator</h1>
+
+        <div class="main-section">
+        <div class="Translate-area">
+            <textarea class="fromText" placeholder="Enter Text"></textarea>
+            <textarea class="toText" placeholder="Translation" readonly disabled></textarea>
+        </div>
+        <ul class="elements">
+            <li class="row">
+        <div class="icons">
+            <i id="fromIcon" class="fa-solid fa-volume-high"></i>
+            <i  class="fa-regular fa-copy fromCopyBtn"></i>
+        </div>
+          <select class="languages">
+                <option value="Eng">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Telugu">Telugu</option>
+            </select>
+        </li>
+        <li class="exchange"><i class="fa-solid fa-arrow-right-arrow-left"></i></li>
+        <li class="row">
+            <select  class="languages">
+                <option value="Eng">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Telugu">Telugu</option>
+            </select>        
+            <div class="icons">
+                <i id="toIcon" class="fa-solid fa-volume-high"></i>
+                <i  class="fa-regular fa-copy toCopyBtn"></i>
+            </div>
+        </li>
+        </ul>
+        <div class="Translate">
+            <button type="button" class="translateBtn">Translate Text</button>
+        </div>
+    </div>
+    </div>
+    <script src="./countries.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
